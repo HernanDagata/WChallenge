@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.Naiofy.pruebas.ventadealbumes'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'com.intuit.karate', name: 'karate-junit4', version: '0.9.5'
+    testCompile group: 'com.intuit.karate', name: 'karate-apache', version: '0.9.5'
+    compile group: 'net.masterthought', name: 'cucumber-reporting', version: '3.8.0'
+}
+
+gradle.startParameter.continueOnFailure = true
